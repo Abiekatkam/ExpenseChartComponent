@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+:root {
+  --DM: "DM Sans", sans-serif;
+
+  --SoftRed: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+
+  --DarkBrown: hsl(25, 47%, 15%);
+  --MediumBrown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --VeryPaleOrange: hsl(33, 100%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  background: var(--Cream);
+  font-family: var(--DM);
+  font-weight: 400;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container {
+  width: 540px;
+  height: fit-content;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--SoftRed);
+  height: 8rem;
+  color: var(--VeryPaleOrange);
+  border-radius: 15px;
+  padding: 0 1.65rem;
+}
+
+.BannerHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 120px;
+}
+
+.BannerHeader small {
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 0.03rem;
+}
+
+.BannerHeader h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+
+.ChartContainer {
+  width: 100%;
+  background-color: var(--VeryPaleOrange);
+  height: 33rem;
+  color: var(--DarkBrown);
+  border-radius: 15px;
+  padding: 2rem 1.65rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.ChartContainer h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.ChartFooter {
+  position: absolute;
+  bottom: 2.7rem;
+  width: 90%;
+  /* width: 120px; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ChartTotal {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 200px;
+  font-size: 2rem;
+}
+
+.ChartTotal small {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.ChartTotal h1 {
+  font-size: 2.2rem;
+}
+
+.ChartHint {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+}
+
+.ChartHint strong {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.ChartHint small {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.divider {
+  border-bottom: 1px solid var(--MediumBrown);
+}
+
+.ChartBarContainer {
+  width: 100%;
+  height: 60%;
+  margin: 1rem 0;
+}
+
+.ChartBarGraph {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  transition: all 0.25s ease-in-out;
+}
+
+.content_card_graph_day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--medium-brown);
+  -webkit-text-stroke: 0.03rem var(--Cream);
+}
+
+.ChartGraphBar {
+  width: 3.15rem;
+  height: 50px;
+  margin-bottom: 0.45rem;
+  border-radius: 0.3rem;
+  background-color: var(--SoftRed);
+}
+
+.ChartGraphBar:hover {
+  opacity: 0.55;
+  cursor: pointer;
+}
+
+.bar2 {
+  height: 100px;
+}
+
+.bar3 {
+  width: 3.136rem;
+  height: 150px;
+}
+
+.bar4 {
+  width: 3.17rem;
+  height: 89px;
+}
+
+.bar5 {
+  height: 67px;
+}
+
+.bar6 {
+  height: 124px;
+}
+
+.bar7 {
+  height: 73px;
+}
+
+.color_this_day {
+  background-color: var(--Cyan);
+}
+
+.over_money {
+  width: 75px;
+  height: 40px;
+  margin-top: -3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 1.08rem;
+  letter-spacing: 0.045rem;
+  -webkit-text-stroke: 0.005rem var(--dark-brown);
+  color: var(--very-pale-orange);
+  border-radius: 4px;
+  background-color: var(--dark-brown);
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.show_money {
+  opacity: 1;
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  position: absolute;
+  margin: 0 auto;
+  width: 540px;
+  bottom: 1.5rem;
+}
+.attribution a {
+  color: var(--SoftRed);
+}
